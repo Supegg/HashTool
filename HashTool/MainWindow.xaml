@@ -1,0 +1,22 @@
+﻿<Window x:Class="HashTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hash Tool" Height="350" Width="525" Icon="hash.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10"/>
+
+        </Grid.RowDefinitions>
+        <Button Content="Open" Name="btOpen" Click="btOpen_Click" HorizontalAlignment="Left" Margin="5,5,0,3" Width="75" Grid.Column="1" Grid.Row="1"/>
+        <TextBox Name="tbHash" AllowDrop="True" IsReadOnly="True" Margin="5" TextWrapping="Wrap" Text="hash code here..." Grid.Row="2" Grid.Column="1" PreviewDragEnter="tbHash_PreviewDragEnter" PreviewDragOver="tbHash_PreviewDragEnter" PreviewDrop="tbHash_PreviewDrop"/>
+
+    </Grid>
+</Window>
